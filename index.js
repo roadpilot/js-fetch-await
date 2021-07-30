@@ -1,3 +1,4 @@
+// this one may not need to be async ???
 async function getData(ref){
 	sql = "select name,linkedin,company,prev_career from contacts where (serial=" + ref + ")";
   return fetch("/data/ajax.php", {
